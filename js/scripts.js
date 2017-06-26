@@ -8,10 +8,10 @@ console.log(listElem.innerText);
 
 addElem.addEventListener('click', function(element) {
 	var element = document.createElement('li');
-	element.innerHTML = 'item';
-	var iloscElementow = document.getElementsByTagName('ul').length;
+	//element.innerHTML = 'item';
+	var iloscElementow = document.getElementsByTagName('li').length;
 	list.appendChild(element);
-	console.log(iloscElementow);
+	element.innerHTML = 'item ' + iloscElementow;
 	console.log(listElem.innerText);
 
 });
